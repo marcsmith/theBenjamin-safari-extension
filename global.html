@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>btowb</title>
+<script type="text/javascript">
+function btwobHandler(event) {
+	if(event.command === "doIt") {
+		safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("heyYou");
+	}
+}
+safari.application.addEventListener("command", btwobHandler, true);
+</script>
+</head>
+<body>
+</body>
+</html>
